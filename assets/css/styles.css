@@ -4,16 +4,19 @@
     font-family: 'Patua One', Arial, Helvetica, sans-serif;
     border: none;
     padding: none;
+    border: none;
     max-width: 100%;
 }
 
 .home-navbar{
     display: flex;
-    background-color: lightcoral;
     justify-content: space-between;
     align-items: center;
     height: 105px;
     width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 .menu-parent{
@@ -53,25 +56,108 @@
 .bg-img{
     width: 100vw;
     height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-.img1{}
+.bg-img::before{
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 
-.img2{}
+.img1{
+    background-image: url("../img/images/shah-pekan1.jpg");
+    background-position: 0 60%;
+}
 
-.img3{}
+.img2{
+    background-image: url("../img/images/shah-pekan2.jpg");
+    background-position: 0 55%;
+}
 
-.img4{}
+.img3{
+    background-image: url("../img/images/shah-pekan3.jpg");
+    background-position: 0 40%;
+}
 
-.img5{}
+.img4{
+    background-image: url("../img/images/shah-pekan4.jpg");
+    background-position: 0 65%;
+}
 
-.img6{}
+.img5{
+    background-image: url("../img/images/shah-pekan5.jpg");
+    background-position: 50% 45%;
+}
 
-.img7{}
+.img6{
+    background-image: url("../img/images/shah-pekan6.jpg");
+    background-position: 0 60%;
+}
 
-.img8{}
+.img7{
+    background-image: url("../img/images/shah-pekan7.jpg");
+}
 
-.img9{}
+.img8{
+    background-image: url("../img/images/shah-pekan8.jpg");
+}
 
-.img10{}
+.bg-text-container{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 40%;
+}
 
+.bg-text{
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    top: 40%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 16px solid white;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-text-row1{
+    display: flex;
+    align-items: center;
+}
+
+.homepage-logo-shah-pekan{
+    width: 92px;
+    position: fixed;
+    bottom: 0;
+    left: 30px;
+    z-index: 100;
+}
+
+.bg-text-row1{
+    font-size: 24px;
+}
+
+.bg-text-row2{
+    font-size: 32px;
+}
+
+.bg-text-row3{
+    font-size: 16px;
+}
+
+.bg-text-row1,
+.bg-text-row2,
+.bg-text-row3{
+    margin: 5px 0;
+}
