@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+*{
+    font-family: 'Patua One', Arial, Helvetica, sans-serif;
+    border: none;
+    padding: none;
+    max-width: 100%;
+}
+
+.home-navbar{
+    display: flex;
+    background-color: lightcoral;
+    justify-content: space-between;
+    align-items: center;
+    height: 105px;
+    width: 100vw;
+}
+
+.menu-parent{
+    margin-left: 25px;
+}
+
+.menu-icon{
+    width: 25px;
+}
+
+.search-bar{
+    display: flex;
+    position: relative;
+    margin-right: 25px;
+}
+
+.search-bar > input{
+    width: 256px;
+    height: 32px;
+    border-radius: 32px;
+    padding-left: 32px;
+    font-size: 16px;
+}
+
+.search-bar > input::placeholder{
+    color: #dddddd;
+}
+
+.search-icon{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top:9px;
+    left: 10px;
+}
+
+.bg-img{
+    width: 100vw;
+    height: 50vh;
+}
+
+.img1{}
+
+.img2{}
+
+.img3{}
+
+.img4{}
+
+.img5{}
+
+.img6{}
+
+.img7{}
+
+.img8{}
+
+.img9{}
+
+.img10{}
+
